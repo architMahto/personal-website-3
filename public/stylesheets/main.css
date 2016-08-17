@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header .nav {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #B7C83B;
+  color: #FAFAFA;
+  width: 100%;
+  height: 60px;
+}
+
+header .nav #menu {
+  display: flex;
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+  /*line-height: 1.5;*/
+}
+
+header .nav h1 {
+  /*display: flex;*/
+  align-self: center;
+  margin: 0;
+  /*text-align: justify;*/
+}
+
+header .nav ul {
+  /*display: flex;*/
+  list-style: none;
+  /*height: 60px;*/
+  /*width: 100%;*/
+  margin: 0 5px 0 0;
+  padding: 0;
+  /*line-height: 4;*/
+}
+
+header .nav ul li {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* 100% Full-height */
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #B7C83B;
+    color: #FAFAFA;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 60px;*/
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .closebtn {
+    align-self: flex-end;
+    /*top: 0;*/
+    /*right: 25px;*/
+    font-size: 36px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sidenav .image-holder {
+  align-self: center;
+}
+
+.sidenav .image-holder img {
+  /*top: 20%;
+  left: 45%;
+  transform: translate(45%, 20%);*/
+  /*margin-bottom: 20px;*/
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+
+.sidenav h2 {
+  align-self: center;
+  margin-bottom: 20px;
+  /*margin: 15px 0;*/
+}
+
+.sidenav .social-media-nav {
+  align-self: center;
+}
+
+.sidenav .social-media-nav ul {
+  flex-direction: row;
+  flew-wrap: wrap;
+  list-style: none;
+}
+
+.sidenav .social-media-nav ul li {
+  display: inline-flex;
+  font-size: 15px;
+  margin: 0 5px;
+}
+
+.sidenav .nav-pages {
+  align-self: center;
+}
+
+.sidenav .nav-pages ul {
+  list-style: none;
+}
+
+.sidenav .nav-pages ul li {
+  font-size: 25px;
+  margin: 30px 0;
+}
+
+.sidenav .nav-pages ul li i {
+  margin-right: 10px;
+}

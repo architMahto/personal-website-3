@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="personalApp">
   <head>
     <meta charset="utf-8">
     <title>Archit Mahto</title>
-  </head>
-  <body>
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Font Awesome Glyphicons  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Angular -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <!-- Angular UI Router -->
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- Angular Sanitize -->
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  </head>
+  <body ng-controller="navController as navCtrl">
+    <header>
+      <div class="nav">
+        <span id="menu" ng-click="navCtrl.openNav()">&#9776;</span>
+        <h1 ng-style="{'display': navCtrl.navbarItems}">ARCHIT MAHTO</h1>
+        <ul ng-style="{'display': navCtrl.navbarItems}">
+          <li>
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div id="container">
+      <div class="sidenav" id="mySideNav" ng-style="{'width' : navCtrl.sideNavWidth}">
+        <span class="closebtn" ng-click="navCtrl.closeNav()">&times;</span>
+        <div class="image-holder">
+          <img src="/images/archit-mahto.jpg" height="150px" width="150px" />
+        </div>
+        <h2>ARCHIT MAHTO</h2>
+        <div class="social-media-nav">
+          <ul>
+            <li>
+              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-pages">
+          <ul>
+            <li>
+              <i class="fa fa-home"></i> Home
+            </li>
+            <li>
+              <i class="fa fa-code"></i> Projects
+            </li>
+            <li>
+              <i class="fa fa-cog"></i> Skills
+            </li>
+            <li>
+              <i class="fa fa-history"></i> History
+            </li>
+            <li>
+              <i class="fa fa-university"></i> Education
+            </li>
+            <li>
+              <i class="fa fa-trophy"></i> Achievements
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PersonalApp -->
+    <script type="text/javascript" src="/javascripts/app.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="/javascripts/controllers/navController.js"></script>
   </body>
 </html>
